@@ -9,7 +9,8 @@ import { useQuery } from "react-query";
 // components
 import { Box, Container } from "@mui/system";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 // types
 import { RoverDetailFetchType } from "../types/rover";
@@ -34,6 +35,7 @@ const SingleRover = () => {
 
   return (
     <Container sx={{ py: "80px" }}>
+      <Link to="/"><Button variant="contained" color="primary" disabled={false}>Back</Button></Link>
       <Typography
         variant="h4"
         component="h4"
